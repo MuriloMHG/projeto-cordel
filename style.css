@@ -1,0 +1,106 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+:root{
+    --fonte-escrita: 'Kaushan Script', 'cursive';
+    --fonte-padrao: 'Passion One', sans-serif;
+    --fonte-padrão2: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 30px;
+    font-variant: small-caps;
+    font-family: var(--fonte-padrao);
+    font-size: 10vw;
+}
+
+header > p{
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    line-height: 2em;
+    padding-left: 40px;
+    font-family: var(--fonte-escrita);
+    font-size: 2.8vw;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    box-shadow: inset 4px 4px 15px 0px black;
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.332);
+    text-shadow: 1.5px 1.5px 0px black;
+}
+
+section#img01{
+    background-image: url(imagens/floramarela.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img02{
+    background-image: url(imagens/floresrosas.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img03{
+    background-image: url(imagens/joaninha.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-variant: small-caps;
+}
